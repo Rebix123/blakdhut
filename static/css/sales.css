@@ -1,0 +1,181 @@
+:root {
+  --bg-color: #0e0e0e;
+  --text-color: #fff;
+  --form-bg: #1c1c1c;
+  --highlight: #ffee00;
+  --input-bg: #333;
+  --button-text: #000;
+  --hover-color: #ffcc00;
+  --file-bg: #222;
+  --file-border: #555;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0c0c0c;
+  color: white;
+  display: flex;
+  max-height: 100vh;
+  align-items: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar{
+  width: 100%;
+}
+/* Main Container */
+.form {
+  margin-top: 50px;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 251, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  transition: background 0.3s ease;
+  height: 100%;
+}
+
+body.light-mode .form {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2, h3 {
+  color: #ffee00;
+  margin-bottom: 20px;
+}
+
+body.light-mode h2,
+body.light-mode h3 {
+  color: #333;
+}
+
+/* Form Labels & Inputs */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+form select,
+form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 14px;
+}
+
+body.light-mode form input,
+body.light-mode form select {
+  background-color: #f0f0f0;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+form select:focus,
+form input:focus {
+  outline: none;
+  border-color: #ffee00;
+  background-color: #1f1f1f;
+}
+
+body.light-mode form input:focus,
+body.light-mode form select:focus {
+  border-color: #333;
+  background-color: #eaeaea;
+}
+
+body.light-mode a{
+  color: black;
+}
+
+
+/* Info Boxes */
+.amount, .rate {
+  margin-top: 16px;
+  padding: 10px;
+  background-color: #242424;
+  border-left: 4px solid #ffee00;
+  border-radius: 4px;
+}
+
+body.light-mode .amount,
+body.light-mode .rate {
+  background-color: #f4f4f4;
+  border-left: 4px solid #ccc;
+}
+
+.rate span:last-child {
+  float: right;
+  font-weight: bold;
+  color: #ffee00;
+}
+
+body.light-mode .rate span:last-child {
+  color: #333;
+}
+
+/* Buttons */
+button {
+  background: #ffee00;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100px;
+}
+
+
+/* File input */
+input[type="file"] {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+body.light-mode input[type="file"] {
+  background-color: #f1f1f1;
+  color: #111;
+  border: 1px dashed #bbb;
+}
+
+/* Text and Links */
+p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffee00;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body.light-mode a {
+  color: #444;
+}
